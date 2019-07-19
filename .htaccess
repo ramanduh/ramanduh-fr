@@ -1,0 +1,21 @@
+SetEnv PHP_VER 7_0
+SetEnv REGISTER_GLOBALS 0
+
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule ^liens-et-references$ /index.php?page=liens [L]
+RewriteRule ^cv/formations-et-diplomes$ /index.php?page=cv1 [L]
+RewriteRule ^cv/experiences$ /index.php?page=cv2 [L]
+RewriteRule ^cv/competences$ /index.php?page=cv3 [L]
+RewriteRule ^cv/langues$ /index.php?page=cv4 [L]
+RewriteRule ^cv/divers$ /index.php?page=cv5 [L]
+RewriteRule ^cv/format-pdf$ /index.php?page=cv6 [L]
+RewriteRule ^cv/$ /index.php?page=cv1 [L]
+RewriteRule ^not-found$ /index.php?page=404 [L]
+RewriteRule ^contact$ /index.php?page=contact [L]
+RewriteRule ^accueil$ /index.php?page=accueil [L]
+#RewriteRule ^([a-z0-9]+)$ /index.php?page=$1 [L]
+
+#redirection erreur
+ErrorDocument 404 http://www.ramanduh.fr/not-found

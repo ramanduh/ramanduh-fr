@@ -1,0 +1,546 @@
+body /*Image de fond*/
+{
+	color:black;
+	background-color:#FAF0E6;
+	font-family: Arial;
+}
+
+/*Début style entête*/
+h1 {
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: orange;
+	width: 750px;
+	height: 150px;
+	padding-bottom:0;
+	margin-bottom:0;
+	text-indent: -1000em;
+	position : relative;
+	left:50px;
+	background: url(images/baniere.png) left top no-repeat;
+}
+/*Fin style entête*/
+
+/*Début style des menus*/
+#entete ul {
+ 	padding:0;
+ 	margin:0;
+	list-style-type:none;
+}
+
+#entete li {
+	margin-left:2px;
+	float:left; /*pour IE*/
+}
+
+#menu a:link,#menu a:focus, #menu a:visited
+{
+	display: block;
+	width: 176px;
+	height: 45px;
+	text-indent: -1000em;
+	overflow:hidden;
+	position : relative;
+	left:37px;
+	margin:8px;
+	background: url(images/button.png) left top no-repeat;
+}
+
+a#b_accueil:link, a#b_accueil:focus, a#b_accueil:visited
+{
+	background-position:0 0px;
+}
+
+a#b_accueil:hover, a#b_accueil:active, a#ba_accueil:link, a#ba_accueil:visited
+{
+	background-position:0 -45px;
+}
+
+a#b_cv:link, a#b_cv:focus, a#b_cv:visited
+{
+	background-position:0 -90px;
+}
+
+a#b_cv:hover, a#b_cv:active, a#ba_cv:link, a#ba_cv:visited
+{
+	background-position:0 -135px;
+}
+
+a#b_projet:link, a#b_projet:focus, a#b_projet:visited
+{
+	background-position:0 -180px;
+}
+
+a#b_projet:hover, a#b_projet:active, a#ba_projet:link, a#ba_projet:visited
+{
+	background-position:0 -225px;
+}
+
+a#b_contact:link, a#b_contact:focus, a#b_contact:visited
+{
+	background-position:0 -270px;
+}
+
+a#b_contact:hover, a#b_contact:active, a#ba_contact:link, a#ba_contact:visited
+{
+	background-position:0 -315px;
+}
+/*Fin style des menus*/
+
+#entete{
+/*	background-color:black;*/
+	background-image:url(images/f_haut.png);
+	width: 850px;
+	height: 210px;
+	position:absolute;
+	top:0%;
+	left: 18%;
+}
+
+/*Debut langue*/
+#langue ul {
+ 	padding:0;
+ 	margin:0;
+	list-style-type:none;
+}
+
+#langue li {
+	margin-left:2px;
+	float:left; /*pour IE*/
+}
+
+#langue a:link, #langue a:visited
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+	text-indent: -1000em;
+	overflow:hidden;
+	position : relative;
+	top: 10px;
+	left:35px;
+}
+
+#francais
+{
+	background-image:url(images/France.png);
+}
+
+#anglais
+{
+	background-image:url(images/United_Kingdom.png);
+}
+/*fin langue*/
+
+/*Début corps du site*/
+#titre_p1
+{
+	color:red;
+	background-image:url(images/fondtitre.png);
+	background-position:0 0px;
+	display:block;
+	text-indent: -1000em;
+	width:400px;
+	height:38px;
+	position:relative;
+	left: 45%;
+}
+
+#corps
+{
+ 	background-image:url(images/f_mil.png);
+ 	padding:5px;
+ 	position : absolute;
+	left: 18%;
+	top: 225px;
+	width:850px;
+	height:400px;
+	/*box-shadow: 0px 0px 30px #666;*/
+}
+
+#contenu
+{
+	position : relative;
+	top:30px;
+	left: 130px;
+	max-width:600px;
+}
+
+p
+{
+	text-align:justify;
+}
+
+#ligne
+{
+	position : relative;
+	top: 10px;
+}
+
+#pied
+{
+	background-image:url(images/f_bas.png) ;
+	padding:5px;
+ 	position : absolute;
+	left: 18%;
+	top: 640px;
+	width:850px;
+	height:80px;
+
+}
+
+#pied p
+{
+	text-align:center;
+	color:gray;
+	font-size:14px;
+	padding:5px;
+}
+
+/*image de chargement*/
+#img_load
+{
+	position:relative;
+	top: 170px;
+	left: 300px;
+}
+
+#projet_bloc
+{
+	position:absolute;
+	top:170px;
+	left: 300px;
+}
+
+/*
+PAGE CONTACT
+*/
+
+#titre_p4
+{
+	background-image:url(images/fondtitre.png);
+	background-position:0 -114px;
+	display:block;
+	text-indent: -1000em;
+	width:400px;
+	height:38px;
+	position:relative;
+	left: 45%;
+}
+
+#formulaire
+{
+	position:relative;
+	left:140px;
+	top:5px
+}
+
+#formulaire caption
+{
+	height:25px;
+	vertical-align: middle;
+}
+
+#formulaire textarea
+{
+	/*width: 400px;
+	height: 100px;
+	resize: none;*/
+	width:400px !important;
+	min-width:400px !important;
+	max-width:400px !important;
+	height:100px !important;
+	min-height:100px !important;
+	max-height:100px !important;
+}
+
+#formulaire a
+{
+	color:gray;
+	text-decoration:none;
+	font-size:12px;
+	position:relative;
+	top:-15px;
+}
+
+#formulaire td
+{
+	vertical-align: middle;
+}
+
+#formulaire .label
+{
+	text-align: left;
+	vertical-align:top;
+	padding-right:4px;
+}
+
+#ps
+{
+	position:relative;
+	left:640px;
+	top:-10px;
+	width:140px;
+	font-size:13px;
+}
+
+/*
+PAGE PROJET
+*/
+#titre_p3
+{
+	background-image:url(images/fondtitre.png);
+	background-position:0 -76px;
+	display:block;
+	text-indent: -1000em;
+	width:400px;
+	height:38px;
+	position:relative;
+	left: 45%;
+}
+
+#liens_content
+{
+	position : relative;
+	top:30px;
+	left: 100px;
+	max-width:630px;
+}
+
+#liens_content a
+{
+	color : blue;
+}
+
+/*
+APRES ENVOI MAIL
+*/
+#return_msg
+{
+	position:relative;
+	left:210px;
+	top:80px;
+}
+
+/*
+Style menu à gauche : CV
+*//*
+#menu_cv {
+	height:120px;
+}*/
+
+#menu_cv ul {
+	margin:40px 0 0 40px;
+	padding:0 0 0 0;
+}
+
+#menu_cv ul li{
+	margin: 0 0px 0 0;
+	padding:0;
+	list-style:none;
+}
+
+#menu_cv ul li a:link,#menu_cv ul li a:focus, #menu_cv ul li a:visited
+{
+	display: block;
+	width: 145px;
+	height: 26px;
+	text-indent: -1000em;
+	overflow:hidden;
+	position : relative;
+	left:20px;
+	margin:4px;
+	background: url(images/menu_cv.png) left top no-repeat;
+}
+
+#menu_cv a#m_formation:link, #menu_cv a#m_formation:focus, #menu_cv a#m_formation:visited
+{
+	background-position:0 0px;
+}
+
+#menu_cv a#m_formation:hover, #menu_cv a#m_formation:active, #menu_cv a#ma_formation:link, #menu_cv a#ma_formation:visited
+{
+	background-position:0 -26px;
+	border-left: 2px solid #5656d9;
+}
+
+#menu_cv a#m_experience:link, #menu_cv a#m_experience:focus, #menu_cv a#m_experience:visited
+{
+	background-position:0 -52px;
+}
+
+#menu_cv a#m_experience:hover, #menu_cv a#m_experience:active, #menu_cv a#ma_experience:link, #menu_cv a#ma_experience:visited
+{
+	background-position:0 -78px;
+	border-left: 2px solid #5656d9;
+}
+
+#menu_cv a#m_competence:link, #menu_cv a#m_competence:focus, #menu_cv a#m_competence:visited
+{
+	background-position:0 -104px;
+}
+
+#menu_cv a#m_competence:hover, #menu_cv a#m_competence:active, #menu_cv a#ma_competence:link, #menu_cv a#ma_competence:visited
+{
+	background-position:0 -130px;
+	border-left: 2px solid #5656d9;
+}
+
+#menu_cv a#m_lang:link, #menu_cv a#m_lang:focus, #menu_cv a#m_lang:visited
+{
+	background-position:0 -156px;
+}
+
+#menu_cv a#m_lang:hover, #menu_cv a#m_lang:active, #menu_cv a#ma_lang:link, #menu_cv a#ma_lang:visited
+{
+	background-position:0 -182px;
+	border-left: 2px solid #5656d9;
+}
+
+#menu_cv a#m_divers:link, #menu_cv a#m_divers:focus, #menu_cv a#m_divers:visited
+{
+	background-position:0 -208px;
+}
+
+#menu_cv a#m_divers:hover, #menu_cv a#m_divers:active, #menu_cv a#ma_divers:link, #menu_cv a#ma_divers:visited
+{
+	background-position:0 -234px;
+	border-left: 2px solid #5656d9;
+}
+
+#menu_cv a#m_pdf:link, #menu_cv a#m_pdf:focus, #menu_cv a#m_pdf:visited
+{
+	background-position:0 -260px;
+}
+
+#menu_cv a#m_pdf:hover, #menu_cv a#m_pdf:active, #menu_cv a#ma_pdf:link, #menu_cv a#ma_pdf:visited
+{
+	background-position:0 -286px;
+	border-left: 2px solid #5656d9;
+}
+
+/*
+PAGE CV
+*/
+#construct
+{
+	position:relative;
+	left:400px;
+	top:30px;
+}
+
+#titre_p2
+{
+	background-image:url(images/fondtitre.png);
+	background-position:0 -38px;
+	display:block;
+	text-indent: -1000em;
+	width:400px;
+	height:38px;
+	position:relative;
+	left: 45%;
+}
+
+#cv_content a
+{
+	color:red;
+	text-decoration:none;
+}
+
+#cv_content
+{
+	position : absolute;
+	top:90px;
+	left: 250px;
+	width:550px;
+	max-height:280px;
+	overflow:auto;
+}
+
+#cv_content table
+{
+	position : relative;
+	left : 0px;
+	border-bottom : 1px solid black;
+	width:500px;
+}
+
+#cv_content table caption
+{
+	font-size:20px;
+	border-bottom : 1px solid black;
+	border-top : 1px solid black;
+	margin-bottom : 12px;
+	padding-top : 2px;
+	padding-bottom : 2px;
+}
+
+#cv_content td
+{
+	text-align : left;
+	vertical-align : top;
+}
+
+#cv_content th
+{
+	text-align : left;
+	vertical-align : top;
+}
+
+table tr.ligne1
+{
+	height : 30px;
+}
+
+table tr.ligne2
+{
+	height : 50px;	
+}
+
+table tr.ligne3
+{
+	height : 70px;
+}
+
+table tr.ligne4
+{
+	height : 90px;	
+}
+
+/*
+PAGE D'ERREUR
+*/
+#error_img
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(50,50,50);
+	position : relative;
+	left : -15px;
+	top : 25px;
+}
+
+#error_msg
+{
+	font-size: 30px;
+	position : relative;
+	left : 90px;
+}
+
+/* English portfolio */
+
+#portfolio_content a
+{
+	color:red;
+	text-decoration:none;
+}
+
+#portfolio_content
+{
+	position : absolute;
+	top:90px;
+	left: 100px;
+	max-height:280px;
+	overflow:auto;
+}
